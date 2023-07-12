@@ -1,0 +1,68 @@
+.App {
+  padding: 10px 30px;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  box-shadow: 0 0 10px 6px #00e1ff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.x-mark {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.x-mark::before,
+.x-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 4px;
+  box-shadow: 0 0 10px 6px #ff00ff;
+}
+
+.x-mark::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.x-mark::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.board-container {
+  width: 600px;
+  height: 600px;
+}
+
+.row-item {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+}
